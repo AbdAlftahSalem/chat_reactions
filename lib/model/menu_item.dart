@@ -1,8 +1,8 @@
 import 'package:flutter/widgets.dart';
 
 class MenuItem {
-  final String label;
-  final IconData icon;
+  final Widget label;
+  final Widget icon;
   final bool isDestuctive;
 
   // contsructor

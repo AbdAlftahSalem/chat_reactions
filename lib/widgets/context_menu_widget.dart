@@ -51,11 +51,11 @@ class ContextMenuWidget extends StatelessWidget {
                   isClicked: clickedIndex == i,
                   onTap: onMenuItemTap,
                 ),
-                if (i != menuItems.length - 1)
-                  Divider(
-                    color: Colors.grey.shade300,
-                    thickness: 1,
-                  ),
+                // if (i != menuItems.length - 1)
+                //   Divider(
+                //     color: Colors.grey.shade300,
+                //     thickness: 1,
+                //   ),
               ],
             ],
           ),

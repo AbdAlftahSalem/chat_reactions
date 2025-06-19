@@ -1,6 +1,6 @@
 import 'package:animate_do/animate_do.dart';
-import 'package:flutter/material.dart';
 import 'package:chat_reactions/model/menu_item.dart';
+import 'package:flutter/material.dart';
 
 /// Single menu item widget with animation
 class MenuItemWidget extends StatelessWidget {
@@ -20,10 +20,6 @@ class MenuItemWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final textColor = item.isDestuctive
-        ? Colors.red
-        : Theme.of(context).textTheme.bodyMedium!.color;
-
     return Padding(
       padding: const EdgeInsets.fromLTRB(8.0, 4.0, 8.0, 4.0),
       child: InkWell(
@@ -31,18 +27,12 @@ class MenuItemWidget extends StatelessWidget {
         child: Row(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
-            Text(
-              item.label,
-              style: TextStyle(color: textColor),
-            ),
+            item.label,
             Pulse(
               infinite: false,
               duration: const Duration(milliseconds: 500),
               animate: isClicked,
-              child: Icon(
-                item.icon,
-                color: textColor,
-              ),
+              child: item.icon,
             ),
           ],
         ),
