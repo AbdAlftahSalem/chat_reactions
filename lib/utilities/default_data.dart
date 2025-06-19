@@ -21,20 +21,22 @@ class DefaultData {
 
   // defaul reply menu item
   static const MenuItem reply = MenuItem(
+    value: 'replay',
     label: Text('Reply'),
     icon: Icon(Icons.reply, color: Colors.blue),
   );
 
   // default copy menu item
   static const MenuItem copy = MenuItem(
+    value: 'copy',
     label: Text('Copy'),
     icon: Icon(Icons.copy, color: Colors.green),
   );
 
   // default edit menu item
   static const MenuItem delete = MenuItem(
+    value: 'delete',
     label: Text('Delete'),
     icon: Icon(Icons.delete, color: Colors.red),
-    isDestuctive: true,
   );
 }

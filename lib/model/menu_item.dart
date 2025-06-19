@@ -3,12 +3,12 @@ import 'package:flutter/widgets.dart';
 class MenuItem {
   final Widget label;
   final Widget icon;
-  final bool isDestuctive;
+  final String value;
 
   // contsructor
   const MenuItem({
     required this.label,
     required this.icon,
-    this.isDestuctive = false,
+    required this.value,
   });
 }
